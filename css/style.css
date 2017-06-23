@@ -1,0 +1,632 @@
+@font-face {
+  font-family: 'ALBOROTO';
+  src: local('ALBOROTO'),
+       url('../fonts/ALBOROTO.otf');
+    font-weight: 300;
+}
+@font-face {
+  font-family: 'NFUTURIS';
+  src: local('NFUTURIS'),
+       url('../fonts/NFUTURIS.ttf');
+    font-weight: 300;
+}
+
+* { 
+	margin:0; 
+	padding:0; 
+} 
+html, body, .wrapper { 
+	height: 100%; 
+
+}
+body{
+	overflow-x:hidden;
+}
+body > .wrapper {
+	height: auto; 
+	min-height: 100%;
+	width: 100%;
+	margin: 0 auto;
+} 
+
+/* CLEAR FIX*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix { 
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+
+.container{
+	max-width: 1440px;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+/*nav*/
+.navbar-nav {
+	margin-top: 25px;
+}
+.navbar span{
+	font-size: 13px;
+	color: #fff;
+}
+.navbar-brand img{
+	margin-bottom: -12px;
+	margin-left: 5px;
+}
+.navbar .nav li a{
+	font-family: "ALBOROTO";
+	font-size: 16px;
+	line-height: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-right: 18px;
+	padding: 5px 15px;
+	letter-spacing: 0.12em;
+}
+.navbar .nav li a:hover{
+	background-color: transparent;
+	color: #e63c30;
+}
+.navbar .nav li a:hover span{
+	color: #e63c30;
+}
+.navbar .nav .social img{
+	padding-top: 7px;
+}
+.navbar .nav li span{
+	font-family: "ALBOROTO";
+	font-size: 50px;
+	padding: 3px;
+	color: #fff;
+}
+.navbar-nav>li>a{
+		padding-top: 10px;
+	}
+.navbar-header .icon-bar,
+.navbar-header button{
+	border: 1px solid #fff;
+}
+.navbar-header button{
+	margin-top: 30px;
+}
+
+/*HEADER*/
+.header{
+	height: 100vh;
+	background-color: #36434c;
+	position: relative;
+}
+.header:before{
+	content: " ";
+	background-image: url(../img/letters.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: absolute;
+	max-width: 1100px;
+	width: 100%;
+	min-height: 572px;
+	height: auto;
+	/*top: 80px;*/
+	top: 10vh;
+	/*right: 125px;*/
+	left: 50%;
+	margin-left: -550px;
+}
+.header h1{
+	font-family: "ALBOROTO";
+	font-size: 31px;
+	color: #e63c30;
+	text-transform: uppercase;
+	text-align: center;
+	max-width: 600px;
+	margin: 65px auto 20px;
+	letter-spacing: 0.12em;
+}
+.main-mnu-top{
+	display: none;
+}
+.header .people img{
+	height: 60vh;
+	display: block;
+	margin: 0 auto;
+}
+.header .main-mnu{
+	max-width: 450px;
+	display: block;
+	margin: 20px auto 20px;
+}
+.header .main-mnu-top{
+	max-width: 450px;
+	margin: 20px auto 20px;
+}
+.header .main-mnu li,
+.header .main-mnu-top li{
+	display: inline-block;
+}
+.header .main-mnu li a:hover,
+.header .main-mnu-top li a:hover{
+	text-decoration: none;
+	color: #e63c30;
+	cursor: pointer;
+}
+.header .main-mnu li a:hover span,
+.header .main-mnu-top li a:hover span{
+	color: #e63c30;
+}
+.header .main-mnu li span,
+.header .main-mnu-top li span{
+	font-family: "ALBOROTO";
+	font-size: 50px;
+	padding: 3px;
+	color: #fff;
+	vertical-align: center;
+}
+.header .main-mnu li:last-child,
+.header .main-mnu-top li:last-child{
+	float: right;
+}
+.header .main-mnu li a,
+.header .main-mnu-top li a{
+	font-family: "ALBOROTO";
+	font-size: 18px;
+	line-height: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+}
+
+
+
+/*BOOK*/
+.book{
+	height: 100vh;
+	/*height: 400px;*/
+	background-color: #74658e;
+	position: relative;
+}
+.book:before{
+	content: " ";
+	background-image: url(../img/letters.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: absolute;
+	max-width: 1100px;
+	width: 100%;
+	min-height: 572px;
+	height: auto;
+	/*z-index: 300;*/
+	/*top: 80px;*/
+	top: 10vh;
+	/*right: 125px;*/
+	left: 50%;
+	margin-left: -550px;
+}
+.book-image,
+.book-icons{
+	height: 638px;
+	}
+.book-image{
+	position: relative;
+}
+.book-image .bg{
+	position: absolute;
+	/*top: 29vh;*/
+	top: 20.5vh;
+	right: 50px;
+	z-index: 50;
+}
+.book-image .person{
+	z-index: 300;
+	position: absolute;
+	right: 70px;
+	top: 13vh;
+	/*height: 80vh;*/
+	height: 544px;
+}
+.book-image:before{
+	content: " ";
+	background-image: url(../img/string-book.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: absolute;
+	max-width: 392px;
+	width: 100%;
+	min-height: 392px;
+	height: auto;
+	z-index: 100;
+	/*top: 27vh;*/
+	top: 19vh;
+	right: 35px;
+}
+.book-image:after{
+	content: " ";
+	background-image: url(../img/Logo-book.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	position: absolute;
+	max-width: 152px;
+	width: 100%;
+	min-height: 46px;
+	height: auto;
+	z-index: 200;
+	/*top: 33vh;*/
+	top: 25vh;
+	right: 233px;
+}
+.book-items{
+	height: 50px;
+	max-width: 650px;
+	display: block;
+	margin: 120px auto;
+	}
+.book-item{
+	display: inline-block;
+	width: 23%;
+	margin-right: 10px;
+	min-height: 100px;
+	vertical-align: top;
+	margin-bottom: 10px;
+	}
+.book-item:hover{
+	-ms-transform: scale(1.2,1.2); 
+    -webkit-transform: scale(1.2,1.2); 
+    transform: scale(1.2,1.2); 
+}
+.book-item a:hover{
+	text-decoration: none;
+}
+.book-item:nth-child(4),
+.book-item:nth-child(8){
+	margin-right: 0;
+}
+.book-item p{
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	letter-spacing: 0.12em;
+	line-height: 16px;
+}
+.book-item img{
+	display: block;
+	margin: 0 auto 10px;
+	vertical-align: top;
+}
+.book-item:nth-child(1) img{
+	padding-top: 1px;
+	padding-bottom: 4px;
+}
+.book-item:nth-child(2) img{
+	padding-top: 3px;
+	padding-bottom: 8px;
+}
+.book-item:nth-child(3) img{
+	padding-top: 5px;
+	padding-bottom: 8px;
+}
+.book-item:nth-child(5) img{
+	padding-top: 4px;
+	padding-bottom: 3px;
+}
+.book-item:nth-child(6) img,
+.book-item:nth-child(7) img,
+.book-item:nth-child(11) img{
+	padding-top: 2px;
+	padding-bottom: 3px;
+}
+.book-icons button{
+	font-family: "ALBOROTO";
+	font-size: 24px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 14px 90px;
+	background-color: #ed493b;
+	border: none;
+	max-width: 350px;
+	margin: 350px auto 0;
+	display: block;
+	width: 100%;
+	letter-spacing: 0.12em;
+	box-shadow: 0px 14px 24px 0px rgba(0, 0, 0, 0.35) inset,
+				0px 10px 27px 0px rgba(0,0,0,0.75); 
+}
+.book-icons button:hover{
+	transform: translateY(4px);
+}
+
+
+
+/*READER*/
+.reader{
+	height: 100vh;
+	/*height: 400px;*/
+	background-color: #3e9d7f;
+	position: relative;
+}
+.reader:before{
+	content: " ";
+	background-image: url(../img/letters.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: absolute;
+	max-width: 1100px;
+	width: 100%;
+	min-height: 572px;
+	height: auto;
+	/*z-index: 300;*/
+	/*top: 80px;*/
+	top: 10vh;
+	/*right: 125px;*/
+	left: 50%;
+	margin-left: -550px;
+}
+.reader-image,
+.reader-icons{
+	height: 638px;
+	}
+.reader-image{
+	position: relative;
+}
+.reader-image .bg{
+	position: absolute;
+	/*top: 15vh;*/
+	top: 20.5vh;
+	right: 50px;
+	z-index: 50;
+}
+.reader-image .person{
+	z-index: 300;
+	position: absolute;
+	right: 70px;
+	top: 25vh;
+	/*height: 80vh;*/
+	height: 470px;
+}
+.reader-image:before{
+	content: " ";
+	background-image: url(../img/string-book.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: absolute;
+	max-width: 392px;
+	width: 100%;
+	min-height: 392px;
+	height: auto;
+	z-index: 100;
+	top: 19vh;
+	right: 35px;
+}
+.reader-image:after{
+	content: " ";
+	background-image: url(../img/logo-reader.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	position: absolute;
+	max-width: 182px;
+	width: 100%;
+	min-height: 46px;
+	height: auto;
+	z-index: 200;
+	top: 25vh;
+	right: 210px;
+}
+.reader-items{
+	height: 50px;
+	max-width: 650px;
+	display: block;
+	margin: 170px auto;
+	}
+.reader-item{
+	display: inline-block;
+	width: 30%;
+	margin-right: 23px;
+	min-height: 100px;
+	vertical-align: top;
+	margin-bottom: 10px;
+	}
+.reader-item:hover{
+	-ms-transform: scale(1.2,1.2); 
+    -webkit-transform: scale(1.2,1.2); 
+    transform: scale(1.2,1.2); 
+}
+.reader-item a:hover{
+	text-decoration: none;
+}
+.reader-item:nth-child(3){
+	margin-right: 0;
+}
+.reader-item p{
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	letter-spacing: 0.12em;
+	line-height: 16px;
+}
+.reader-item img{
+	display: block;
+	margin: 0 auto 10px;
+	vertical-align: top;
+}
+.reader-item:nth-child(1) img{
+	padding-top: 1px;
+	padding-bottom: 4px;
+}
+.reader-item:nth-child(3) img{
+	padding-top: 1px;
+	padding-bottom: 2px;
+}
+.reader-icons button{
+	font-family: "ALBOROTO";
+	font-size: 24px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 14px 90px;
+	background-color: #ed493b;
+	border: none;
+	max-width: 350px;
+	margin: 300px auto 0;
+	display: block;
+	width: 100%;
+	letter-spacing: 0.12em;
+	box-shadow: 0px 14px 24px 0px rgba(0, 0, 0, 0.35) inset,
+				0px 10px 27px 0px rgba(0,0,0,0.75); 
+}
+.reader-icons button:hover{
+	transform: translateY(4px);
+}
+
+
+
+
+
+/*METAFORA*/
+.metafora{
+	height: 100vh;
+	/*height: 400px;*/
+	background-color: #4c89b5;
+	position: relative;
+}
+.metafora:before{
+	content: " ";
+	background-image: url(../img/letters.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: absolute;
+	max-width: 1100px;
+	width: 100%;
+	min-height: 572px;
+	height: auto;
+	/*z-index: 300;*/
+	/*top: 80px;*/
+	top: 10vh;
+	/*right: 125px;*/
+	left: 50%;
+	margin-left: -550px;
+}
+.metafora-image,
+.metafora-icons{
+	height: 638px;
+	}
+.metafora-image{
+	position: relative;
+}
+.metafora-image .bg{
+	position: absolute;
+	top: 20.5vh;
+	right: 50px;
+	z-index: 50;
+}
+.metafora-image .person{
+	z-index: 300;
+	position: absolute;
+	right: 70px;
+	top: 13vh;
+	/*height: 80vh;*/
+	height: 544px;
+}
+.metafora-image:before{
+	content: " ";
+	background-image: url(../img/string-book.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: absolute;
+	max-width: 392px;
+	width: 100%;
+	min-height: 392px;
+	height: auto;
+	z-index: 100;
+	top: 19vh;
+	right: 35px;
+}
+.metafora-image:after{
+	content: " ";
+	background-image: url(../img/logo-metafora.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	position: absolute;
+	max-width: 146px;
+	width: 100%;
+	min-height: 141px;
+	height: auto;
+	z-index: 200;
+	top: 25vh;
+	right: 250px;
+}
+.metafora-items{
+	height: 50px;
+	max-width: 650px;
+	display: block;
+	margin: 220px auto -40px;
+	}
+.metafora-item{
+	display: inline-block;
+	width: 30%;
+	margin-right: 23px;
+	min-height: 100px;
+	vertical-align: top;
+	margin-bottom: 10px;
+	}
+.metafora-item:hover{
+	-ms-transform: scale(1.2,1.2); 
+    -webkit-transform: scale(1.2,1.2); 
+    transform: scale(1.2,1.2);
+}
+.metafora-item a:hover{
+	text-decoration: none;
+}
+.metafora-item:nth-child(3){
+	margin-right: 0;
+}
+.metafora-item p{
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	letter-spacing: 0.12em;
+	line-height: 16px;
+}
+.metafora-item img{
+	display: block;
+	margin: 0 auto 10px;
+	vertical-align: top;
+}
+.metafora-item:nth-child(2) img{
+	padding-top: 3px;
+	padding-bottom: 4px;
+}
+.metafora-item:nth-child(3) img{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.metafora-icons button{
+	font-family: "ALBOROTO";
+	font-size: 24px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 14px 90px;
+	background-color: #ed493b;
+	border: none;
+	max-width: 350px;
+	margin: 300px auto 0;
+	display: block;
+	width: 100%;
+	letter-spacing: 0.12em;
+	box-shadow: 0px 14px 24px 0px rgba(0, 0, 0, 0.35) inset,
+				0px 10px 27px 0px rgba(0,0,0,0.75); 
+}
+.metafora-icons button:hover{
+	transform: translateY(4px);
+}
